@@ -43,7 +43,7 @@ body {
 /* Utility classes */
 .animate {
   animation-duration: 1s;
-  animation-fill-mode: both;
+  animation-fill-mode: forwards;
 }
 
 .animate.animate--infinite {
