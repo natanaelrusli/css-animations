@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.input-group label {
+  display: block;
+  color: #4e4e4e;
+}
+
+.input-group input {
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #c7c7c7;
+  outline: none;
+  background-color: white;
+  z-index: 10;
+}
+
+.input-group .input-group__message {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #4e4e4e;
+  opacity: 0;
+  transform: translateY(-20%);
+  transition: opacity 0.25s ease-in-out, transform 0.2s ease-in;
+  pointer-events: none; /* Prevent it from capturing mouse events */
+}
+
+.input-group .input-group__message.show {
+  color: red;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.25s ease-in-out , transform 0.2s ease-in;
+}
