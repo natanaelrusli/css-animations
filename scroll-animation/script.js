@@ -9,6 +9,7 @@ function setScrollVar() {
     "--scroll",
     Math.min(percentOfScreenHeightScrolled * 100, 100)
   );
+  console.log("scroll:", htmlElement.style.getPropertyValue("--scroll"));
 }
 
 setScrollVar();
